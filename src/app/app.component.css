@@ -1,0 +1,136 @@
+.nav-bg {
+    background-color: black !important;
+}
+
+.heading-container {
+    margin-top: 50px;
+}
+
+.heading {
+    font-style: 'bold_font';
+    font-size: 93px;
+    color: #000;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@font-face {
+    font-family: "black_font";
+    src: url("../assets/fonts/black.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "bold_font";
+    src: url("../assets/fonts/bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "light_font";
+    src: url("../assets/fonts/light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "medium_font";
+    src: url("../assets/fonts/medium.ttf") format("opentype");
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 !important;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-para {
+    margin-top: 0;
+    margin-bottom: 4rem !important;
+    text-align: center;
+    color: #6f6e71;
+    font-size: 28px;
+
+}
+
+.carousel-control-prev-icon {
+    background-image: url("https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png") !important;
+
+}
+
+.carousel-control-next-icon {
+    background-image: url("https://w7.pngwing.com/pngs/390/296/png-transparent-arrow-computer-icons-right-angle-symbol-arrow-left-thumbnail.png") !important;
+}
+
+
+
+
+button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* img {
+    display: block;
+    width: 100%;
+} */
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 15s linear infinite;
+}
+
+article.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+div {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
