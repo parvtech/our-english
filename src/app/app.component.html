@@ -25,15 +25,16 @@
     <span class="dot" style="background-color: #fdf4a1"></span>
     <span class="dot" style="background-color: #cad2eb"></span>
   </div>
-  <div class="container-fluid">
-    <figure #videoContainerEl class="video-container">
-      <video width="1366" height="365" #videoEl src="../assets/videonew.mp4"></video>
+  <div class="mt-5">
+    <figure #videoContainerEl>
+      <video width="1366" height="365" #videoEl class="vid-con" src="../assets/videonew.mp4"></video>
       <!-- <div class="controls"> -->
       <!-- <p (mouseenter)="onPlay()">Play</p> -->
       <!-- <button type="button" (click)="onPause()">Pause</button> -->
       <!-- </div> -->
-      <img src="../assets/playlogo.png" height="50" width="125" (mouseenter)="onPlay()" />
+      <img src="../assets/playlogo.png" height="50" width="125" (mouseenter)="onPlay() " class="content" />
     </figure>
+
   </div>
   <div>
     <section>
